@@ -1,0 +1,12 @@
+{
+  "name": "lambda-puppeteer",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "zip -r lambda.zip index.js node_modules",
+    "prod": "sam remote invoke arn:aws:lambda:ap-southeast-2:260928565387:function:sam-app-MyFunction-eBSxIQ4BvaFj --event-file event.json --region ap-southeast-2  --profile personalmaster"
+  },
+  "dependencies": {
+    "@sparticuz/chromium": "^129.0.0",
+    "puppeteer": "^23.5.3"
+  }
+}
