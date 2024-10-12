@@ -4,4 +4,12 @@ package-lock.json
 /build
 /aws-sam
 .aws-sam/
+.tmp/
+tmp/
+./tmp/
+/tmp
 
+# Add these lines to ensure all tmp folders are ignored
+tmp
+/tmp/
+**/tmp/

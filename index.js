@@ -16,6 +16,7 @@ exports.handler = async (event, context, callback) => {
     defaultViewport: chromium.defaultViewport,
     executablePath: await chromium.executablePath(),
     headless: chromium.headless,
+    userDataDir: './tmp',
     ignoreHTTPSErrors: true,
   });
 
